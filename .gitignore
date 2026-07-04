@@ -1,0 +1,36 @@
+# Virtual environments (see README setup steps to recreate)
+.venv/
+.venv-mt/
+.venv-onnx/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets (regenerate via `python -m utils.data_loader`, see README)
+data/raw_documents/
+data/processed_data/
+
+# Trained model weights (regenerate via `utils.transfer_learning` + `export_onnx.py`,
+# see README -- configs/metrics stay tracked, only the large binaries are ignored)
+models/checkpoints/*.h5
+models/checkpoints/*.onnx
+models/checkpoints/ensemble/*.h5
+
+# Generated reports (regenerate via `python generate_reports.py`, see README)
+reports/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Claude Code session-local state
+.claude/

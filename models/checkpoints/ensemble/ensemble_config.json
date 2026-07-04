@@ -1,0 +1,9 @@
+{
+  "description": "Weighted average of 3 independently-trained DistilBERT checkpoints (batch_size=8 lr=3e-5, batch_size=16 lr=4e-5 epoch6, batch_size=8 lr=3e-5 second seed). Weights chosen by grid search on the validation set, applied once to test for the reported number.",
+  "weights": {
+    "model_a.h5": 0.267,
+    "model_b.h5": 0.4,
+    "model_c.h5": 0.333
+  },
+  "val_accuracy_at_selection": 0.9254
+}

@@ -1,0 +1,29 @@
+{
+  "model_name": "distilbert-base-multilingual-cased",
+  "max_len": 256,
+  "num_labels": 5,
+  "label2id": {
+    "marketplace": 0,
+    "politics_society": 1,
+    "recreation_sports": 2,
+    "science_health": 3,
+    "technology": 4
+  },
+  "id2label": {
+    "0": "marketplace",
+    "1": "politics_society",
+    "2": "recreation_sports",
+    "3": "science_health",
+    "4": "technology"
+  },
+  "languages_supported": [
+    "en",
+    "es"
+  ],
+  "test_accuracy": 0.9014925373134328,
+  "test_f1_macro": 0.8900811636755852,
+  "per_language_accuracy": {
+    "en": 0.8995163890381516,
+    "es": 0.9261744966442953
+  }
+}
