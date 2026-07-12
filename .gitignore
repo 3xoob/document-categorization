@@ -74,8 +74,6 @@ application-local.yaml
 *.db
 *.sqlite
 *.sqlite3
-*.sql
-*.sql.gz
 *.dump
 *.bak
 # Dependencies
@@ -88,7 +86,6 @@ dist/
 build/
 out/
 target/
-bin/
 obj/
 .next/
 .nuxt/
